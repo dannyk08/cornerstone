@@ -1,0 +1,17 @@
+.Card {
+  // min-height: 20rem;
+  flex: 1;
+  display: flex;
+
+  // TODO: finish order
+  &[reverse-order=true] {
+    flex-direction: row-reverse;
+  }
+
+  &__image {
+    // 
+  }
+  &__speech {
+    // 
+  }
+}

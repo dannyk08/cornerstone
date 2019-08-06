@@ -4,7 +4,8 @@ import styles from '@csApp/App.scss'
 import {
   TextInput,
   Hero,
-  HeroMessage
+  HeroMessage,
+  TestimonialsSection
 } from "@csApp/components";
 
 export default class App extends Component {
@@ -26,6 +27,7 @@ export default class App extends Component {
               </h5>
             </Fragment>
           </HeroMessage>
+          <TestimonialsSection />
         </Hero>
       </main>
     )
