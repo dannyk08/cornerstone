@@ -1,5 +1,6 @@
 const { resolve: resolvePath } = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = ({
@@ -51,7 +52,13 @@ module.exports = ({
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: resolvePath(__dirname, './public/index.html'),
-      })
+      }),
+      new CopyWebpackPlugin([
+        {
+          from: 'public/assets',
+          to: '.'
+        }
+      ])
     ],
     resolve: {
       alias: {
