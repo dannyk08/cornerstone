@@ -34,6 +34,11 @@ module.exports = ({
         template: resolvePath(__dirname, './public/index.html'),
       })
     ],
+    resolve: {
+      alias: {
+        '@csApp': resolvePath(__dirname, './src')
+      }
+    },
     externals: {
       'react': 'React',
       'react-dom': 'ReactDOM'

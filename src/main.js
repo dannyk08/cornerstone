@@ -1,13 +1,5 @@
 import React, { Component } from "react";
 import { render as renderDOM } from "react-dom";
-
-class App extends Component {
-  render() {
-    return (
-      <h1>Tada!</h1>
-    )
-  }
-
-}
+import App from "@csApp/App";
 
 renderDOM(<App />, document.getElementById('cornerstoneApp'))
