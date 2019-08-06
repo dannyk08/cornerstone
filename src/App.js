@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 
 import styles from '@csApp/App.scss'
 import {
+  TextInput,
   Hero,
   HeroMessage
 } from "@csApp/components";
@@ -10,6 +11,9 @@ export default class App extends Component {
   render() {
     return (
       <main className={styles['cs-app']}>
+        <TextInput
+          placeholder={'My perfect job is...'}
+        />
         <Hero
           backgroundImage='/images/banner/banner-background.jpg'
         >
