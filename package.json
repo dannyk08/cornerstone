@@ -1,0 +1,17 @@
+{
+  "name": "cornerstone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dannyk08/cornerstone.git",
+  "author": "Daniel Romero <romerodaniel.k90@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --env.mode=production --env.destFolder=.dev --progress --config=webpack.config.js",
+    "preinstall": "yarn || npm i",
+    "start": "webpack --env.mode=development --env.destFolder=dist --progress --config=webpack.config.js --watch"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
