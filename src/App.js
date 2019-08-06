@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 
+import styles from '@csApp/App.scss'
 export default class App extends Component {
   render() {
     return (
-      <h1>REALIZE YOUR POTENTIAL</h1>
+      <main className={styles['cs-app']}>
+        {/*  */}
+      </main>
     )
   }
 }

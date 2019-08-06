@@ -25,6 +25,25 @@ module.exports = ({
           use: {
             loader: 'babel-loader'
           }
+        },
+        {
+          test: /\.scss$/,
+          exclude: /node_modules/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: {
+                  mode: 'local',
+                  localIdentName: isProduction ?
+                    'cs-app--[local]' :
+                    '[name]__[local]'
+                }
+              }
+            },
+            'sass-loader'
+          ]
         }
       ]
     },
@@ -45,6 +64,16 @@ module.exports = ({
     },
     mode,
     devtool
+  }
+
+  if (!isProduction) {
+    config.devServer = {
+      contentBase: resolvePath(__dirname, destFolder),
+      compress: true,
+      port: 3000,
+      hot: true,
+      open: true,
+    }
   }
 
   return config
