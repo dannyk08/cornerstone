@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { v4 } from "uuid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
+
+const iconsMap = {
+  search: faSearch
+}
 
 import styles from './TextInput.scss'
 const TextInput = ({
-  // TODO: [should] define what the input icon is
-  // task = null, 
-
+  task = null,
   name,
   id = v4(),
   type = 'text',
@@ -25,7 +29,16 @@ const TextInput = ({
         onChange={handleChange}
         value={value}
         type={type}
+        has-icon={(task === null).toString()}
       />
+      {
+        task !== null && (
+          <FontAwesomeIcon
+            className={styles['TextInput__task--icon']}
+            icon={iconsMap[task]}
+          />
+        )
+      }
     </label>
   )
 }

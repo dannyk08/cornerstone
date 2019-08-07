@@ -10,8 +10,9 @@
     padding       : 1rem .5rem;
 
     &-icon {
-      color : var(--artic-blue);
-      cursor: pointer;
+      color    : var(--artic-blue);
+      cursor   : pointer;
+      font-size: .8rem;
     }
 
     &-icon[is-active=true] {
