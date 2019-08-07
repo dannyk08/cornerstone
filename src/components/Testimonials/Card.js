@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from "./Card.scss";
 const Card = ({
-author: {
+  author: {
     name,
     occupation,
     profileImage
@@ -15,9 +15,19 @@ author: {
       className={styles['Card']}
       reverse-order={(reverseOrder).toString()}
     >
-      <img src={profileImage} alt={`${name}, ${occupation} testimonial image profile.`} />
-      <h3>{header}</h3>
-      <p>{name}, {occupation}</p>
+      <div className={styles['Card__image']}>
+        <img
+          src={profileImage}
+          alt={`${name}, ${occupation} testimonial image profile.`}
+        />
+      </div>
+
+      <div className={styles['Card__testimonial']}>
+        <h4 className={styles['Card__testimonial-text']}>{header}</h4>
+        <p className={styles['Card__testimonial-author']}>{name}, {occupation}</p>
+        <h4 className={styles['Card__testimonial-quote']}>"</h4>
+      </div>
+
     </section>
   )
 }

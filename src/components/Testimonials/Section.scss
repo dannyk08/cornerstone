@@ -1,6 +1,12 @@
 .Section {
-  // only for mobile up
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  height: 10rem;
+  padding       : 1rem 0;
+  flex          : 1;
+
+  @media(min-width: 600px) {
+    flex-direction: row;
+    padding       : 2rem 1rem;
+
+  }
 }
