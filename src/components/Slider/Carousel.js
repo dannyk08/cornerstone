@@ -1,4 +1,6 @@
-import React, { useRef, createRef, useState } from 'react'
+import React, { useState } from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons/faCircle";
 
 import styles from "./Carousel.scss";
 import SliderCard from "./Card";
@@ -16,9 +18,27 @@ const Carousel = () => {
   return (
     <section className={styles['Carousel']}>
       <div className={styles['Carousel__controls']}>
-        <span onClick={() => handleCarouselNavigation(0)}>*</span>
-        <span onClick={() => handleCarouselNavigation(1)}>*</span>
-        <span onClick={() => handleCarouselNavigation(2)}>*</span>
+        <span
+          className={styles['Carousel__controls-icon']}
+          onClick={() => handleCarouselNavigation(0)}
+          is-active={(0 * 35 === carouselTopOffset).toString()}
+        >
+          <FontAwesomeIcon icon={faCircle} />
+        </span>
+        <span
+          className={styles['Carousel__controls-icon']}
+          onClick={() => handleCarouselNavigation(1)}
+          is-active={(1 * 35 === carouselTopOffset).toString()}
+        >
+          <FontAwesomeIcon icon={faCircle} />
+        </span>
+        <span
+          className={styles['Carousel__controls-icon']}
+          onClick={() => handleCarouselNavigation(2)}
+          is-active={(2 * 35 === carouselTopOffset).toString()}
+        >
+          <FontAwesomeIcon icon={faCircle} />
+        </span>
       </div>
 
       <div

@@ -2,8 +2,14 @@
 // 600px tablet
 // 840px desktop
 
+$white             : #FFFFFF;
+$light-gray        : #F6F6F6;
+$brilliant-cerulean: #16AADD;
+$artic-blue        : #B7EAF5;
+
 :root {
-  --white: #FFFFFF;
-  --light-gray: #F6F6F6;
-  --brilliant-cerulean: #16AADD;
+  --white             :#{$white};
+  --light-gray        : #{$light-gray};
+  --brilliant-cerulean: #{$brilliant-cerulean};
+  --artic-blue        : #{$artic-blue};
 }

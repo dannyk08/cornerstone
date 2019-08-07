@@ -8,6 +8,15 @@
     flex          : 0 0 3rem;
     align-items   : center;
     padding       : 1rem .5rem;
+
+    &-icon {
+      color : var(--artic-blue);
+      cursor: pointer;
+    }
+
+    &-icon[is-active=true] {
+      color: var(--brilliant-cerulean);
+    }
   }
 
   &__slides {
