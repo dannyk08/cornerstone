@@ -9,7 +9,7 @@ const Hero = ({
     <section
       className={styles['Hero']}
       style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)), url(${backgroundImage})`
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url(${backgroundImage})`
       }}
     >
       {children}

@@ -38,8 +38,8 @@ module.exports = ({
                 modules: {
                   mode: 'local',
                   localIdentName: isProduction ?
-                    'cs-app--[local]' :
-                    '[name]__[local]'
+                    'cs-app--[name]__[local]' :
+                    '[name]__[local]--[hash:base64:5]'
                 }
               }
             },

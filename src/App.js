@@ -5,7 +5,8 @@ import {
   TextInput,
   Hero,
   HeroMessage,
-  TestimonialsSection
+  TestimonialsSection,
+  BrandTestimonialsSection
 } from "@csApp/components";
 
 export default class App extends Component {
@@ -29,6 +30,7 @@ export default class App extends Component {
           </HeroMessage>
           <TestimonialsSection />
         </Hero>
+        <BrandTestimonialsSection />
       </main>
     )
   }
