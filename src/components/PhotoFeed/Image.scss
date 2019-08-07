@@ -1,0 +1,9 @@
+.Image {
+  display        : flex;
+  flex           : 1 0 23%;
+  max-height     : 10rem;
+  overflow       : hidden;
+  justify-content: center;
+  align-items    : center;
+  padding        : .5rem;
+}

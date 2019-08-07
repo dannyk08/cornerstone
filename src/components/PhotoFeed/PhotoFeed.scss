@@ -1,0 +1,21 @@
+.PhotoFeed {
+  max-width : 60rem;
+  margin    : auto;
+  text-align: center;
+  padding   : 2rem 0;
+
+  h5 {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color      : var(--brilliant-cerulean);
+    font-weight: 100;
+  }
+
+  &__photos {
+    display  : flex;
+    flex-wrap: wrap;
+  }
+
+}

@@ -11,3 +11,4 @@ export {
 export {
   SliderCarousel
 } from './Slider'
+export { PhotoFeed } from './PhotoFeed'

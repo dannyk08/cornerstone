@@ -9,7 +9,8 @@ import {
   HeroMessage,
   TestimonialsSection,
   BrandTestimonialsSection,
-  SliderCarousel
+  SliderCarousel,
+  PhotoFeed
 } from "@csApp/components";
 
 export default class App extends Component {
@@ -36,6 +37,7 @@ export default class App extends Component {
         </Hero>
         <BrandTestimonialsSection />
         <SliderCarousel />
+        <PhotoFeed />
       </main>
     )
   }
