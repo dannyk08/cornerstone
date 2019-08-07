@@ -8,3 +8,6 @@ export {
   BrandTestimonialsCard,
   BrandTestimonialsSection,
 } from './BrandTestimonials'
+export {
+  SliderCarousel
+} from './Slider'

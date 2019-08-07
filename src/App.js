@@ -6,7 +6,8 @@ import {
   Hero,
   HeroMessage,
   TestimonialsSection,
-  BrandTestimonialsSection
+  BrandTestimonialsSection,
+  SliderCarousel
 } from "@csApp/components";
 
 export default class App extends Component {
@@ -31,6 +32,7 @@ export default class App extends Component {
           <TestimonialsSection />
         </Hero>
         <BrandTestimonialsSection />
+        <SliderCarousel />
       </main>
     )
   }

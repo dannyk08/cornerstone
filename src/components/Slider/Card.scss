@@ -1,0 +1,63 @@
+.Card {
+  flex   : 1;
+  display: flex;
+  height : 100%;
+
+  &__description {
+    margin-right   : 2rem;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    flex           : 5;
+
+    &-focus {
+      text-transform: uppercase;
+    }
+
+    &-headline {
+      color      : var(--brilliant-cerulean);
+      font-weight: 100;
+      margin     : 1rem 0;
+    }
+
+    &-text {
+      font-size: .8rem;
+    }
+  }
+
+  &__images {
+    display        : flex;
+    flex-direction : column;
+    flex           : 7;
+    justify-content: center;
+
+    &-panes {
+      display       : flex;
+      flex-direction: column;
+    }
+  }
+
+  @media(min-width: 600px) {
+    &__description {
+      margin: 2rem;
+    }
+
+    &__images {
+      &-panes {
+        flex-direction: row;
+
+        img {
+          flex     : 1;
+          max-width: 50%;
+        }
+
+      }
+    }
+  }
+
+  @media(min-width: 840px) {
+    &__description {
+      margin: 0 2rem;
+    }
+  }
+}

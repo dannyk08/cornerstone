@@ -1,0 +1,27 @@
+.Carousel {
+  display   : flex;
+  background: var(--white);
+
+  &__controls {
+    display       : flex;
+    flex-direction: column;
+    flex          : 0 0 3rem;
+    align-items   : center;
+    padding       : 1rem .5rem;
+  }
+
+  &__slides {
+    flex   : 1;
+    padding: 2rem;
+  }
+
+  @media(min-width: 600px) {
+    min-height: 32.5rem;
+    max-width : 60rem;
+    margin    : auto;
+
+    &__slides {
+      padding: 0;
+    }
+  }
+}
