@@ -1,2 +1,2 @@
-export { default as BrandTestimonialsCard } from './Card'
-export { default as BrandTestimonialsSection } from './Section'
+export { default as BrandTestimonialsCard } from './BrandTestimonialsCard'
+export { default as BrandTestimonialsSection } from './BrandTestimonialsSection'

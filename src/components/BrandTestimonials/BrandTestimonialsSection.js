@@ -1,11 +1,12 @@
 import React from 'react'
 
-import styles from "./Section.scss";
-import BrandTestimonialsCard from "./Card";
+import styles from "./BrandTestimonialsSection.scss";
+import BrandTestimonialsCard from "./BrandTestimonialsCard";
 import { testimonials } from "./data";
-const Section = () => {
+
+const BrandTestimonialsSection = () => {
   return (
-    <section className={styles['Section']}>
+    <section className={styles['BrandTestimonialsSection']}>
       {
         testimonials.map(({ subHeader, brand }, index) => (
           <BrandTestimonialsCard
@@ -19,4 +20,4 @@ const Section = () => {
   )
 }
 
-export default Section
+export default BrandTestimonialsSection

@@ -1,2 +1,2 @@
-export { default as TestimonialsCard } from './Card'
-export { default as TestimonialsSection } from './Section'
+export { default as TestimonialsCard } from './TestimonialsCard'
+export { default as TestimonialsSection } from './TestimonialSection'

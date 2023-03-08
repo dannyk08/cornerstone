@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons/faCircle";
 
 import styles from "./Carousel.scss";
-import SliderCard from "./Card";
+import SliderCard from "./SliderCard";
 import { carouselData } from "./data";
 
 const SLIDE_HEIGHT = 35
